@@ -1,5 +1,9 @@
 const movieContainer = document.getElementById("movieContainer");
 
+$.get("https://students-api.2.us-1.fl0.io/movies", (data) => {
+	data.forEach((movie) => renderMovie(movie));
+})
+
 function renderMovie(movie) {
 	const newATitle = document.createElement("a");
     const newImgPoster = document.createElement("img");
@@ -27,5 +31,3 @@ function renderMovie(movie) {
 
     moviesContainer.appendChild(newDiv);
 }
-
-tempData.forEach((movie) => renderMovie(movie));

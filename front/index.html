@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Proyecto de M2</h1>
+    <title>Proyecto M2</title>
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
 
+<body>
+    <header>
+        <div class="container">
+            <div class="navigationTitle">
+                <h1>Proyecto M2</h1>
+            </div>
+            <div class="navigationBar">
+                <ul>
+                    <li><a href="./index.html">Peliculas</a></li>
+                    <li><a href="./pages/history.html">Historia del cine</a></li>
+                    <li><a href="./pages/about.html">Sobre mi proyecto</a></li>
+                    <li><a href="./pages/best.html">Webs recomendadas</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="movieList">
+        <div class="container">
+            <div class="sectionTitle">
+                <h2>PELICULAS</h2>
+            </div>
+            <div id="movieContainer" class="sectionContent">
+            </div>
+        </div>
+    </div>
     <script src="./scripts/tempData.js"></script>
     <script src="./scripts/index.js"></script>
-  </body>
+</body>
+
 </html>

@@ -58,13 +58,13 @@ header .navigationTitle{
 	font-weight: 700;
 }
 
-header .navigationBar{
+nav {
 	flex-grow: 1;
 	text-align: right;
 	padding-right: 1rem;
 }
 
-header .navigationBar li{
+nav li{
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	list-style: none;
@@ -73,22 +73,22 @@ header .navigationBar li{
 	padding: 0 1rem;
 }
 
-header .navigationBar a{
+nav a{
 	color: #fff;
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
 }
 
-header .navigationBar a:hover{
+nav a:hover{
 	color: lightgrey;
 }
 
-#movieList{
+#mainSection{
 	padding-top: 90px;
 	text-align: center;
 }
 
-#movieContainer{
+#moviesContainer{
 	display: flex;
 }
 

@@ -1,104 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&family=Poppins:wght@400;500&display=swap');
 
-body{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	min-height: 100vh;
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
 }
 
-.container{
-	width: 100%;
-	max-width: 1200px;
-	margin: auto;
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.sectionTitle{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-	font-size: 2rem;
-	letter-spacing: 0.15rem;
-	text-transform: uppercase;
-	color: black;
-	padding-bottom: 1.5rem;
-	padding-top: 1.5rem;
-	box-sizing: border-box;
-	text-align: center;
+.sectionTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 h1 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 2em;
-	color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: white;
 }
 
-header{
-	background-color: black;
-	height: 90px;
-	width: 100%;
-	top: 0;
-	position: fixed;
-	overflow: auto;
-	z-index: 100;
+#mainTitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    overflow: auto;
+    z-index: 100;
 }
 
 header .container {
-	height: 90px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-}
-
-header .navigationTitle{
-	padding: 0px 1rem;
-	color: #fff;
-	font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 nav {
-	flex-grow: 1;
-	text-align: right;
-	padding-right: 1rem;
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 1rem;
 }
 
-nav li{
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	list-style: none;
-	font-weight: 700;
-	display: inline-block;
-	padding: 0 1rem;
+nav li {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 1rem;
 }
 
-nav a{
-	color: #fff;
-	text-decoration: none;
-	transition: all 0.3s ease-in-out;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
-nav a:hover{
-	color: lightgrey;
+nav a:hover {
+    color: lightgrey;
 }
 
-#mainSection{
-	padding-top: 90px;
-	text-align: center;
+#mainSection {
+    padding-top: 80px;
+    text-align: center;
 }
 
-#moviesContainer{
-	display: flex;
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 
-.newDivClass{
-	margin: 1rem;
-	padding: 1rem;
-	border: 1px solid #aaa;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	text-align: center;
+#moviesContainer {
+    display: flex;
+}
+
+.newDivClass {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 0;
 }

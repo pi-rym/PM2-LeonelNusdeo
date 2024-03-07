@@ -19,15 +19,37 @@ function renderMovie(movie) {
     newPDuration.innerHTML = `Duración: ${movie.duration}`;
     newPRate.innerHTML = movie.rate;
 
-    const newDiv = document.createElement("div");
+    newATitle.classList.add("card-title");
+    newImgPoster.classList.add("img-fluid", "rounded-start");
+    newPDirector.classList.add("card-text");
+    newPDuration.classList.add("card-text");
+    newPRate.classList.add("card-text");
 
-    newDiv.appendChild(newATitle);
-    newDiv.appendChild(newImgPoster);
-    newDiv.appendChild(newPDirector);
-    newDiv.appendChild(newPDuration);
-    newDiv.appendChild(newPRate);
+    const imgDiv = document.createElement("div");
+    const infoDiv = document.createElement("div");
+    const infoBodyDiv = document.createElement("div");
+    const containerDiv = document.createElement("div");
+    const cardDiv = document.createElement("div");
 
-    newDiv.classList.add("newDivClass");
+    imgDiv.classList.add("col-md-4");
+    infoDiv.classList.add("col-md-8");
+    infoBodyDiv.classList.add("card-body");
+    containerDiv.classList.add("row", "g-0");
+    cardDiv.classList.add("newDivClass", "card", "mb-3");
+        
+    imgDiv.appendChild(newImgPoster);
 
-    moviesContainer.appendChild(newDiv);
+    infoBodyDiv.appendChild(newATitle);
+    infoBodyDiv.appendChild(newPDirector);
+    infoBodyDiv.appendChild(newPDuration);
+    infoBodyDiv.appendChild(newPRate);
+
+    infoDiv.appendChild(infoBodyDiv);
+
+	containerDiv.appendChild(imgDiv);
+	containerDiv.appendChild(infoDiv);
+	
+	cardDiv.appendChild(containerDiv);
+
+    moviesContainer.appendChild(cardDiv);
 }

@@ -93,6 +93,8 @@ h2 {
 
 #moviesContainer {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .newDivClass {

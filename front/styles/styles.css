@@ -82,13 +82,14 @@ nav a:hover {
 }
 
 #mainSection {
-    padding-top: 80px;
+    padding-top: 5.5rem;
     text-align: center;
 }
 
 h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 #moviesContainer {

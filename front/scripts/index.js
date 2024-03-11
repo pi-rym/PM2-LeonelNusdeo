@@ -1,5 +1,14 @@
 const renderMovie = require("./render-movie.js");
+const axios = require("axios");
 
-$.get("https://students-api.2.us-1.fl0.io/movies", (data) => {
-	data.forEach((movie) => renderMovie(movie));
-})
+const fetchData = async () => {
+    try {
+        const result = await axios.get("https://students-api.up.railway.app/movies");
+        const data = result.data;
+        data.forEach((movie) => renderMovie(movie));
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+fetchData();

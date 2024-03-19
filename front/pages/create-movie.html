@@ -46,10 +46,67 @@
                 <h2>Crear pelicula</h2>
             </div>
             <div id="createMovieContainer" class="sectionContent">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium adipisci eos natus beatae sunt reiciendis provident fugit quia similique nisi. Nesciunt, molestiae nulla ipsum ad ipsam illo expedita itaque, commodi.</p>
+                <form id="addMovieForm" class="row g-3 pt-3 needs-validation d-flex justify-content-center" novalidate>
+                    <div class="col-md-7">
+                        <label for="inputTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="inputTitle" placeholder="Ej. Indiana Jones and the Last Crusade" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese el Título.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputYear" class="form-label">Año de estreno</label>
+                        <input type="text" class="form-control" id="inputYear" placeholder="Ej. 1989" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese el Año de estreno.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputDirector" class="form-label">Director</label>
+                        <input type="text" class="form-control" id="inputDirector" placeholder="Ej. Steven Spielberg" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese el Director.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputDuration" class="form-label">Duración</label>
+                        <input type="text" class="form-control" id="inputDuration" placeholder="Ej. 2h 7m" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese la Duración.
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <label for="inputGenre" class="form-label">Géneros</label>
+                        <input type="text" class="form-control" id="inputGenre" placeholder="Ej. Aventura, Acción" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese uno o más Géneros.
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputRate" class="form-label">Valoración</label>
+                        <input type="text" class="form-control" id="inputRate" placeholder="Ej. 8.2" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese la Valoración.
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <label for="inputPoster" class="form-label">Poster</label>
+                        <input type="text" class="form-control" id="inputPoster" placeholder="Ej. https://upload.wikimedia.org/wikipedia/en/8/8c/Indiana_Jones_and_the_Last_Crusade.png" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese un Poster.
+                        </div>
+                    </div>
+                    <div class="col-6 py-5">
+                        <button id="submitFormButton" class="btn btn-primary" type="submit">Agregar Película</button>
+                    </div>
+                    <div class="col-6 py-5">
+                        <button id="clearFormButton" class="btn btn-secondary">Limpiar Formulario</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
+    <script src="../public/create-movie.bundle.js"></script>
 </body>
 
 </html>

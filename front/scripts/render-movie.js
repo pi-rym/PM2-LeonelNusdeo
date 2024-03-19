@@ -25,7 +25,7 @@ function renderMovie(movie) {
     const cardDiv = document.createElement("div");
 
     bodyDiv.classList.add("card-body");
-    cardDiv.classList.add("newDivClass", "card");
+    cardDiv.classList.add("newDivClass", "card", "shadow", "p-3", "mb-5", "bg-body-tertiary", "rounded");
     cardDiv.style.width = "18rem";
 
     bodyDiv.appendChild(newATitle);

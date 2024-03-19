@@ -112,3 +112,9 @@ h2 {
 p {
     margin-bottom: 0;
 }
+
+
+
+::placeholder {
+    font-style: italic;
+}

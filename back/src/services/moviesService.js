@@ -5,4 +5,17 @@ const getMoviesService = async () => {
     return movies;
 }
 
-module.exports = getMoviesService
+const postMovieService = async (movie) => {
+    try {
+        const newMovie = await Movie.create(movie);
+        return newMovie;
+    } catch (error) {
+        throw Error('Error en el proceso de crear una Pelicula.');
+        console.log(error.message);
+    }
+}
+
+module.exports = { 
+    getMoviesService,
+    postMovieService
+}

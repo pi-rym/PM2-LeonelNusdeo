@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 function validateForm() {
     const form = document.getElementById("addMovieForm");
 
@@ -22,7 +24,6 @@ function clearForm() {
 }
 
 const setMovieHandler = () => {
-    // Seleccionar los inputs de title, description e imgUrl.
     const titleInput = document.getElementById("titleInput");
     const yearInput = document.getElementById("yearInput");
     const directorInput = document.getElementById("directorInput");
@@ -30,7 +31,7 @@ const setMovieHandler = () => {
     const genreInput = document.getElementById("genreInput");
     const rateInput = document.getElementById("rateInput");
     const posterInput = document.getElementById("posterInput");
-    // Tomar los valores ingresados en los inputs y guardarlos en variables.
+
     const title = titleInput.value;
     const year = parseInt(yearInput.value);
     const director = directorInput.value;
@@ -38,17 +39,24 @@ const setMovieHandler = () => {
     const genre = genreInput.value.split(', ');
     const rate = parseFloat(rateInput.value);
     const poster = posterInput.value;
-    // Validar que estos valores estén completos.
-    if(!title || !year || !director || !duration || !genre || !rate || !poster) {
+
+    if (!title || !year || !director || !duration || !genre || !rate || !poster) {
         return alert("Datos incompletos. Por favor ingrese todos los campos.");
     } else {
         const movie = { title, year, director, duration, genre, rate, poster };
-        console.log(movie);
-        return alert("Pelicula creada correctamente.");
+
+        axios.post('http://localhost:3000/movies', movie)
+            .then(res => {
+                console.log('Pelicula creada correctamente.', res.data);
+            })
+            .catch(error => {
+                console.log(error);
+            });
     }
 }
 
 
 validateForm();
+clearForm();
 const setMovieButton = document.getElementById("addMovieButton");
 setMovieButton.addEventListener("click", setMovieHandler);

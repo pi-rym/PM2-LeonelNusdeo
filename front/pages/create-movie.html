@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
-                <a id="mainTitle" class="navbar-brand fs-2" href="./index.html">Proyecto M2</a>
+                <a id="mainTitle" class="navbar-brand fs-2" href="../index.html">Proyecto M2</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -58,7 +58,7 @@
                         <label for="yearInput" class="form-label">Año de estreno</label>
                         <input type="text" class="form-control" id="yearInput" placeholder="Ej. 1989" required>
                         <div class="invalid-feedback">
-                            Por favor ingrese el Año de estreno.
+                            Por favor ingrese el Año de estreno (formato 4 dígitos).
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -86,7 +86,7 @@
                         <label for="rateInput" class="form-label">Valoración</label>
                         <input type="text" class="form-control" id="rateInput" placeholder="Ej. 8.2" required>
                         <div class="invalid-feedback">
-                            Por favor ingrese la Valoración.
+                            Por favor ingrese la Valoración (entre 0 y 10).
                         </div>
                     </div>
                     <div class="col-md-10">
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div class="col-6 py-5">
-                        <button id="addMovieButton" class="btn btn-primary">Agregar Película</button>
+                        <button id="addMovieButton" class="btn btn-primary" type="button">Agregar Película</button>
                     </div>
                     <div class="col-6 py-5">
                         <button id="clearFormButton" class="btn btn-secondary">Limpiar Formulario</button>
